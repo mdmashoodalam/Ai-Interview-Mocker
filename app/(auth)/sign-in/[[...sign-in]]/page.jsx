@@ -7,7 +7,7 @@ export default function Page() {
         <section className="relative flex h-32 items-end bg-gray-900 lg:col-span-5 lg:h-full xl:col-span-6">
           <img
             alt=""
-            src="https://images.unsplash.com/photo-1617195737496-bc30194e3a19?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80"
+            src="https://img.freepik.com/free-photo/portrait-person-ai-robot_23-2151015337.jpg?t=st=1743611232~exp=1743614832~hmac=f907a4a4e36adde71e3b298d4de81f0c690d812949c7edf5cf9b6982a2e64d09&w=740"
             className="absolute inset-0 h-full w-full object-cover opacity-80"
           />
 
