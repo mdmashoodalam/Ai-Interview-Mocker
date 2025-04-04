@@ -42,7 +42,7 @@ const HowItWorksPage = () => {
     <div className="container mx-auto px-4 py-12">
       {/* Page Header */}
       <div className="text-center mb-12">
-        <h1 className="text-3xl sm:text-4xl font-bold text-gray-800 mb-4 flex flex-col sm:flex-row items-center justify-center gap-3">
+        <h1 className="text-3xl sm:text-4xl font-bold text-gray-800 dark:text-white mb-4 flex flex-col sm:flex-row items-center justify-center gap-3">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             viewBox="0 0 100 100"
@@ -59,7 +59,7 @@ const HowItWorksPage = () => {
             MashSub AI: Your Interview Preparation Companion
           </span>
         </h1>
-        <p className="text-xl text-gray-600">
+        <p className="text-xl text-gray-600 dark:text-gray-300">
           Master your interviews with AI-powered practice and personalized insights
         </p>
       </div>
@@ -73,11 +73,11 @@ const HowItWorksPage = () => {
           >
             <div className="flex items-center mb-4">
               {step.icon}
-              <h2 className="ml-4 text-2xl font-semibold text-gray-800">
+              <h2 className="ml-4 text-2xl font-semibold text-gray-800 dark:text-black">
                 Step {index + 1}: {step.title}
               </h2>
             </div>
-            <p className="text-gray-600">{step.description}</p>
+            <p className="text-gray-600 dark:text-black">{step.description}</p>
           </div>
         ))}
       </div>

@@ -89,7 +89,7 @@ function Dashboard() {
       {/* User Greeting */}
       <div className="flex flex-col sm:flex-row justify-between items-center mb-8 space-y-4 sm:space-y-0">
         <div>
-          <h2 className="text-2xl sm:text-3xl font-bold text-gray-800 flex items-center gap-3">
+          <h2 className="dark:text-white text-2xl sm:text-3xl font-bold text-gray-800 flex items-center gap-3">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               viewBox="0 0 100 100"
@@ -101,7 +101,7 @@ function Dashboard() {
             </svg>
             Dashboard
           </h2>
-          <h3 className="text-lg sm:text-xl text-gray-600 mt-2">
+          <h3 className=" dark:text-white text-lg sm:text-xl text-gray-600 mt-2">
             Welcome, {user?.firstName || "Interviewer"}
           </h3>
         </div>
@@ -150,7 +150,7 @@ function Dashboard() {
 
       {/* Interview History */}
       <div className="mt-8">
-        <h2 className="text-xl sm:text-2xl font-semibold text-gray-800 mb-6">Interview History</h2>
+        <h2 className=" dark:text-white text-xl sm:text-2xl font-semibold text-gray-800 mb-6">Interview History</h2>
         <InterviewList interviews={interviewData} />
       </div>
     </div>

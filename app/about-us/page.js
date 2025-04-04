@@ -56,37 +56,37 @@ const AboutUsPage = () => {
 
   const coreValues = [
     {
-      icon: <Award className="w-12 h-12 text-indigo-600 mb-4" />,
+      icon: <Award className="w-12 h-12 dark:text-white text-indigo-600 mb-4" />,
       title: "Continuous Learning",
       description: "Always striving to improve and provide better tools for growth."
     },
     {
-      icon: <Users className="w-12 h-12 text-indigo-600 mb-4" />,
+      icon: <Users className="w-12 h-12 dark:text-white text-indigo-600 mb-4" />,
       title: "Empowerment",
       description: "Supporting individuals in building confidence and achieving professional success."
     },
     {
-      icon: <Briefcase className="w-12 h-12 text-indigo-600 mb-4" />,
+      icon: <Briefcase className="w-12 h-12 dark:text-white text-indigo-600 mb-4" />,
       title: "Excellence",
       description: "Delivering high-quality, impactful features to simplify interview preparation."
     }
-  ]
+  ];
 
   return (
-    <div className="min-h-screen bg-gray-50 py-8 sm:py-12 md:py-16 px-4 sm:px-6 lg:px-8">
+    <div className="min-h-screen py-8 sm:py-12 md:py-16 px-4 sm:px-6 lg:px-8">
       <div className="max-w-7xl mx-auto">
         {/* Hero Section */}
-        <div className="text-center mb-8 sm:mb-12 md:mb-16">
-          <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-extrabold text-gray-900">
+        <div className="text-center dark:text-white mb-8 sm:mb-12 md:mb-16">
+          <h1 className="text-3xl sm:text-4xl dark:text-white md:text-5xl lg:text-6xl font-extrabold text-gray-900">
             About MashSub AI
           </h1>
-          <p className="mt-4 max-w-xl mx-auto text-base sm:text-lg md:text-xl text-gray-600 px-4">
+          <p className="mt-4 max-w-xl dark:text-white mx-auto text-base sm:text-lg md:text-xl text-gray-600 px-4">
             Empowering professionals to ace interviews through intelligent, personalized AI coaching
           </p>
         </div>
 
         {/* Tabs Section */}
-        <div className="bg-white shadow-lg rounded-lg overflow-hidden mb-8 sm:mb-12 md:mb-16">
+        <div className="shadow-lg rounded-lg overflow-hidden mb-8 sm:mb-12 md:mb-16">
           <div className="flex flex-col sm:flex-row border-b">
             {Object.keys(tabContent).map((tab) => (
               <button
@@ -110,19 +110,23 @@ const AboutUsPage = () => {
         </div>
 
         {/* Values Section */}
-        <div className="bg-white rounded-lg shadow-md p-6 sm:p-8 md:p-12">
-          <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-center text-gray-900 mb-8 sm:mb-10 md:mb-12">
+        <div className="rounded-lg shadow-md p-6 sm:p-8 md:p-12">
+          <h2 className="text-2xl sm:text-3xl dark:text-white md:text-4xl font-bold text-center text-gray-900 mb-8 sm:mb-10 md:mb-12">
             Our Core Values
           </h2>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8">
             {coreValues.map((value, index) => (
               <div 
                 key={index} 
-                className="text-center bg-gray-50 p-6 rounded-lg shadow-sm hover:shadow-md transition-all duration-300"
+                className="text-center p-6 rounded-lg shadow-sm hover:shadow-md transition-all duration-300"
               >
                 <div className="flex justify-center">{value.icon}</div>
-                <h3 className="text-lg sm:text-xl font-semibold text-gray-900 mb-3">{value.title}</h3>
-                <p className="text-base text-gray-600">{value.description}</p>
+                <h3 className="text-lg sm:text-xl font-semibold text-gray-900 dark:text-white mb-3">
+                  {value.title}
+                </h3>
+                <p className="text-base text-gray-600 dark:text-white">
+                  {value.description}
+                </p>
               </div>
             ))}
           </div>

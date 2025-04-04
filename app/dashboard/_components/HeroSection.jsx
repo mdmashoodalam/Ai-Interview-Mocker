@@ -4,8 +4,8 @@ import { useState } from 'react'
 
 export default function HeroSection() {
   return (
-    <div className="bg-white min-h-screen flex items-center">
-      <div className="relative isolate px-6 pt-14 lg:px-8 w-full">
+    <div className="bg-white dark:bg-gray-900 min-h-screen  items-center  pt-0.1 ">
+      <div className="relative isolate  px-6 pt-14 lg:px-8 w-full border border-gray-300 dark:border-white rounded-lg ">
         <div className="absolute inset-x-0 -top-40 -z-10 transform-gpu overflow-hidden blur-3xl sm:-top-80">
           <div
             style={{
@@ -18,9 +18,9 @@ export default function HeroSection() {
 
         <div className="mx-auto max-w-4xl py-16 sm:py-24 lg:py-20">
           <div className="hidden sm:mb-8 sm:flex sm:justify-center">
-            <div className="relative rounded-full px-3 py-1 text-sm leading-6 text-gray-600 ring-1 ring-gray-900/10 hover:ring-gray-900/20">
-       How to use this AI interview mocker .{' '}
-              <a href="/how-it-works" className="font-semibold text-indigo-600">
+            <div className="relative rounded-full px-3 py-1 text-sm leading-6 text-gray-600 dark:text-white ring-1 ring-gray-900/10 hover:ring-gray-900/20">
+              How to use this AI interview mocker .{' '}
+              <a href="/how-it-works" className="font-semibold text-indigo-600 dark:text-white">
                 <span aria-hidden="true" className="absolute inset-0" />
                 Read more <span aria-hidden="true">&rarr;</span>
               </a>
@@ -28,10 +28,10 @@ export default function HeroSection() {
           </div>
 
           <div className="text-center">
-            <h1 className="text-4xl font-bold tracking-tight text-gray-900 sm:text-6xl">
+            <h1 className="text-4xl font-bold tracking-tight text-gray-900 dark:text-white sm:text-6xl">
               Your Personal AI Interview Coach
             </h1>
-            <p className="mt-6 text-lg leading-8 text-gray-600 sm:text-xl">
+            <p className="mt-6 text-lg leading-8 text-gray-600 dark:text-white sm:text-xl">
               Double your chances of landing that job offer with our AI-powered interview prep
             </p>
             <div className="mt-10 flex items-center justify-center gap-x-6">
@@ -43,7 +43,7 @@ export default function HeroSection() {
               </a>
               <a 
                 href="/dashboard" 
-                className="text-sm font-semibold leading-6 text-gray-900 hover:text-indigo-600"
+                className="text-sm font-semibold leading-6 text-gray-900 dark:text-white hover:text-indigo-600"
               >
                 Learn more <span aria-hidden="true">→</span>
               </a>
