@@ -2,7 +2,6 @@
 
 import React from "react";
 import { 
-  Bot, 
   UserCheck, 
   Settings, 
   Play, 
@@ -41,16 +40,31 @@ const HowItWorksPage = () => {
 
   return (
     <div className="container mx-auto px-4 py-12">
+      {/* Page Header */}
       <div className="text-center mb-12">
-        <h1 className="text-4xl font-bold text-gray-800 mb-4">
-          <Bot className="inline-block mr-3 text-indigo-600" size={48} />
-          MockMate AI: Your Interview Preparation Companion
+        <h1 className="text-3xl sm:text-4xl font-bold text-gray-800 mb-4 flex flex-col sm:flex-row items-center justify-center gap-3">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 100 100"
+            className="h-10 w-10 sm:h-12 sm:w-12 md:h-12 md:w-12 lg:h-14 lg:w-14 text-indigo-600"
+            fill="currentColor"
+          >
+            <circle cx="50" cy="50" r="48" stroke="currentColor" strokeWidth="4" fill="none" />
+            <path
+              d="M50 20 L65 50 L50 80 L35 50 Z"
+              fill="currentColor"
+            />
+          </svg>
+          <span className="text-center sm:text-left">
+            MashSub AI: Your Interview Preparation Companion
+          </span>
         </h1>
         <p className="text-xl text-gray-600">
           Master your interviews with AI-powered practice and personalized insights
         </p>
       </div>
 
+      {/* Steps Section */}
       <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
         {steps.map((step, index) => (
           <div 
@@ -68,6 +82,7 @@ const HowItWorksPage = () => {
         ))}
       </div>
 
+      {/* Call to Action */}
       <div className="text-center mt-12">
         <a 
           href="/dashboard" 

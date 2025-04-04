@@ -1,4 +1,5 @@
 'use client'
+import { ArrowRight } from 'lucide-react';
 import { useState } from 'react'
 import { 
   Users, 
@@ -17,8 +18,8 @@ const AboutUsPage = () => {
       icon: <Target className="mr-2 text-indigo-600" />,
       content: (
         <div className="space-y-4">
-          <p className="text-base md:text-lg">MockMate AI is on a mission to revolutionize interview preparation by providing personalized, intelligent AI coaching tailored to individual career aspirations.</p>
-          <p className="text-base md:text-lg">With MockMate AI, the goal is to bridge the gap between preparation and success, empowering users to unlock their full potential.</p>
+          <p className="text-base md:text-lg">MashSub AI is on a mission to revolutionize interview preparation by providing personalized, intelligent AI coaching tailored to individual career aspirations.</p>
+          <p className="text-base md:text-lg">With MashSub AI, the goal is to bridge the gap between preparation and success, empowering users to unlock their full potential.</p>
         </div>
       )
     },
@@ -26,7 +27,7 @@ const AboutUsPage = () => {
       icon: <BookOpen className="mr-2 text-indigo-600" />,
       content: (
         <div className="space-y-4">
-          <p className="text-base md:text-lg">The idea for MockMate AI was born from firsthand experiences with the challenges of interview preparation. As a solo developer, I wanted to create a platform that simplifies the process and builds confidence in individuals.</p>
+          <p className="text-base md:text-lg">The idea for MashSub AI was born from first hand experiences with the challenges of interview preparation. As a solo developer, I wanted to create a platform that simplifies the process and builds confidence in individuals.</p>
           <p className="text-base md:text-lg">This journey has been a testament to the power of passion and innovation, leading to the creation of an impactful tool for career growth.</p>
         </div>
       )
@@ -35,8 +36,19 @@ const AboutUsPage = () => {
       icon: <Rocket className="mr-2 text-indigo-600" />,
       content: (
         <div className="space-y-4">
-          <p className="text-base md:text-lg">MockMate AI leverages advanced AI algorithms to generate dynamic, contextually relevant interview questions based on your professional background and goals.</p>
+          <p className="text-base md:text-lg">MashSub AI leverages advanced AI algorithms to generate dynamic, contextually relevant interview questions based on your professional background and goals.</p>
           <p className="text-base md:text-lg">Through real-time analysis and feedback, the platform provides actionable insights, enabling users to improve with every mock interview attempt.</p>
+        </div>
+      )
+    },
+    ["Why \"MashSub AI\"?"]: {
+      icon: <BookOpen className="mr-2 text-indigo-600" />,
+      content: (
+        <div className="space-y-4">
+          <p className="text-base md:text-lg">"MashSub AI" blends the names of its creators—Mashood and Subhana—symbolizing teamwork and innovation. Just as two minds unite to build brilliance, our AI empowers you to ace interviews with confidence. Together, we redefine smart preparation!</p>
+          <p className="text-base flex md:text-lg"><ArrowRight className="mr-2 text-indigo-600 w-6 h-7" />Mash for the mind that engineered the vision,</p>
+          <p className="text-base flex md:text-lg"><ArrowRight className="mr-2 text-indigo-600 w-6 h-7" />Sub for the spirit that refined it to perfection,</p>
+          <p className="text-base flex md:text-lg"><ArrowRight className="mr-2 text-indigo-600 w-6 h-7" />AI for the intelligence that brings it to life.</p>
         </div>
       )
     }
@@ -66,7 +78,7 @@ const AboutUsPage = () => {
         {/* Hero Section */}
         <div className="text-center mb-8 sm:mb-12 md:mb-16">
           <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-extrabold text-gray-900">
-            About MockMate AI
+            About MashSub AI
           </h1>
           <p className="mt-4 max-w-xl mx-auto text-base sm:text-lg md:text-xl text-gray-600 px-4">
             Empowering professionals to ace interviews through intelligent, personalized AI coaching

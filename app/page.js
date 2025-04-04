@@ -79,8 +79,8 @@ export default function ResourcesPage() {
           icon: <PenTool className="w-8 h-8 text-indigo-600" />,
           links: [
             { name: "IndiaBix", url: "https://www.indiabix.com/" },
-            { name: "Freshersworld Aptitude", url: "https://www.freshersworld.com/aptitude-questions" },
-            { name: "MathsGuru Reasoning", url: "https://www.mathsguru.com/reasoning-questions/" }
+            { name: "Freshersworld Aptitude", url: "https://placement.freshersworld.com/aptitude-questions-and-answers" },
+            { name: "Byjus Reasoning", url: "https://byjus.com/govt-exams/logical-reasoning/" }
           ]
         },
         {
@@ -104,7 +104,7 @@ export default function ResourcesPage() {
           icon: <Book className="w-8 h-8 text-indigo-600" />,
           links: [
             { name: "Insider Tips", url: "https://www.ambitionbox.com/" },
-            { name: "InterviewStreet", url: "https://www.interviewstreet.com/" },
+            { name: "HackerRank", url: "https://www.hackerrank.com/interviewstreet" },
             { name: "Career Guidance", url: "https://www.shiksha.com/" }
           ]
         },
@@ -114,7 +114,7 @@ export default function ResourcesPage() {
           icon: <Globe className="w-8 h-8 text-indigo-600" />,
           links: [
             { name: "Coursera", url: "https://www.coursera.org/" },
-            { name: "edX", url: "https://www.edx.org/" },
+            { name: "Udemy", url: "https://www.udemy.com/" },
             { name: "Udacity", url: "https://www.udacity.com/" }
           ]
         }

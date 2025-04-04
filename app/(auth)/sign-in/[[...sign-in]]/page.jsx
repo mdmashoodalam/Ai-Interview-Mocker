@@ -2,13 +2,13 @@ import { SignIn } from "@clerk/nextjs";
 
 export default function Page() {
   return (
-    <section className="bg-white">
-      <div className="lg:grid lg:min-h-screen lg:grid-cols-12">
-        <section className="relative flex h-32 items-end bg-gray-900 lg:col-span-5 lg:h-full xl:col-span-6">
+    <section className="bg-white h-screen overflow-hidden">
+      <div className="lg:grid lg:h-screen lg:grid-cols-12">
+        <section className="relative flex items-end bg-gray-900 lg:col-span-5 lg:h-full xl:col-span-6">
           <img
             alt=""
-            src="https://img.freepik.com/free-photo/portrait-person-ai-robot_23-2151015337.jpg?t=st=1743611232~exp=1743614832~hmac=f907a4a4e36adde71e3b298d4de81f0c690d812949c7edf5cf9b6982a2e64d09&w=740"
-            className="absolute inset-0 h-full w-full object-cover opacity-80"
+            src="https://img.freepik.com/free-photo/3d-rendering-biorobots-concept_23-2149524398.jpg?t=st=1743781095~exp=1743784695~hmac=998ad5ca9fdbb86e814e1dc6b9169ab612bcbfb2d6d76d64989b9afeb7da61c8&w=1060"
+            className="absolute inset-0 h-full w-full object-cover opacity-30"
           />
 
           <div className="hidden lg:relative lg:block lg:p-12">
@@ -28,12 +28,15 @@ export default function Page() {
             </a>
 
             <h2 className="mt-6 text-2xl font-bold text-white sm:text-3xl md:text-4xl">
-              Welcome to AI Interview Mockers 🦑
+              Welcome to AI Interview Mockers 🔮
             </h2>
 
             <p className="mt-4 leading-relaxed text-white/90">
-              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eligendi
-              nam dolorum aliquam, quibusdam aperiam voluptatum.
+              "Crush your interviews with AI-powered mock sessions"
+            </p>
+            <p className="mt-4 leading-relaxed text-white/90">
+              "Sharpen your skills, ace your interviews! Get real-time feedback
+              and personalized coaching to land your dream job."
             </p>
           </div>
         </section>
@@ -60,13 +63,16 @@ export default function Page() {
               </a>
 
               <h1 className="mt-2 text-2xl font-bold text-gray-900 sm:text-3xl md:text-4xl">
-                Welcome to AI Interview Moker 🦑
+              Welcome to AI Interview Mockers 🔮
               </h1>
 
-              <p className="mt-4 leading-relaxed text-gray-500">
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                Eligendi nam dolorum aliquam, quibusdam aperiam voluptatum.
-              </p>
+              <p className="mt-4 leading-relaxed text-white/90">
+              "Crush your interviews with AI-powered mock sessions"
+            </p>
+            <p className="mt-4 leading-relaxed text-white/90">
+              "Sharpen your skills, ace your interviews! Get real-time feedback
+              and personalized coaching to land your dream job."
+            </p>
             </div>
             <SignIn />
           </div>
